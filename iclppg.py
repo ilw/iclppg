@@ -142,10 +142,7 @@ def updatePlt():
         ptr = -DISP_LENGTH
         spo2_store = np.zeros(DISP_LENGTH,dtype=float)
         spo2_smooth_store = np.zeros(DISP_LENGTH,dtype=float)
-        raw_curve.setData(spo2_store)                     # set the curve with this data
-        smooth_curve.setData(spo2_smooth_store)                     
-        raw_curve.setPos(ptr,0)                   # set x position in the graph to 0
-        smooth_curve.setPos(ptr,0)    
+            
     QtGui.QApplication.processEvents()    # you MUST process the plot now
     
 
